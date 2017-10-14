@@ -1,0 +1,39 @@
+body{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+#Start{
+  text-align:center;
+  padding:40px;
+  background-image:url(../../assets/img/D:\portofolio web asset\background.jpg);
+  background-size:cover;
+}
+
+@media (max-width:1199px) {
+  #Start{
+    padding:20px;
+  }
+}
+
+#Start .jumbotron{
+  border-radius:10px;
+  padding:40px;
+  background-color:rgba(255,255,255,0.7);
+  max-width:800px;
+  margin:0 auto;
+}
+
+.container{
+  text-align:center;
+}
+
+@media (max-width:1199px) {
+  #Start .jumbotron{
+    padding:20px;
+  }
+}
+
+a.navbar-brand.navbar-link{
+  font-family:Great Day Personal Use;
+}
+

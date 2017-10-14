@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/bootstrap.css" rel="stylesheet" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link href="css/bootstrap-theme.css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="registration.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><strong>Biztek </strong></a>
+               <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li role="presentation"><a href="#home">Home</a></li>
+                  <li role="presentation"><a href="#features">Features </a></li>
+                  <li role="presentation"><a href="#">Contact </a></li>
+                  <li role="presentation"><a href="#">Register </a></li>
+                  <li role="presentation"><a href="#">Login </a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="container" id="home">
+         <div class="row">
+            <div class="col-md-8 image">
+               <!-- <img class="img img-responsive" src="biztek_fix1.png" alt=""> -->
+               
+                   <h1>
+                       Find Your Ideal Trading <br> For Life
+                   </h1>
+                   <br>
+                   <h3>
+                       Registrasi untuk mendapat benefit yang lebih besar
+                   </h3>
+               
+            </div>
+            <div class="registration col-md-4 col-sm-8 col-xs-11">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     Register
+                  </div>
+                  <div class="panel-body">
+                     <form method="post">
+                        <div class="row">
+                           <div class="col-md-12 col-sm-12 col-xs-12">
+                              <!-- NAMA PERUSAHAAN -->
+                              <label class="control-label">Nama Perusahaan</label>
+                              <div class="input-group">
+                                 <span style="" class="input-group-addon">
+                                    <select id="select">
+                                       <option value="CV">CV</option>
+                                       <option value="FIRMA">FIRMA</option>
+                                       <option value="PT">PT</option>
+                                       <option value="UD">UD</option>
+                                    </select>
+                                 </span>
+                                 <input type="text" class="form-control input">
+                              </div>
+                              <!-- EMAIL -->
+                              <div class="form-group">
+                                 <label class="control-label">Email</label>
+                                 <input type="text" class="form-control input">
+                              </div>
+                              <!-- NAMA ORANG -->
+                              <label class="control-label">Nama Orang Yang Dapat Dihubungi</label>
+                              <div class="input-group">
+                                 <span style="" class="input-group-addon">
+                                    <select  id="select">
+                                       <option value="Ibu">Bapak</option>
+                                       <option value="Bapak">Ibu</option>
+                                    </select>
+                                 </span>
+                                 <input type="text" class="form-control input">
+                              </div>
+                              <!-- NOMOR ORANG -->
+                              <label class="control-label">Nomor Orang Yang Dapat Dihubungi</label>
+                              <div class="input-group">
+                                 <span style="" class="input-group-addon">
+                                 +62
+                                 </span>
+                                 <input type="text" class="form-control input">
+                              </div>
+                              <!-- PASSWORD -->
+                              <div class="form-group">
+                                 <label class="control-label">Password</label>
+                                 <input type="password" class="form-control input">
+                              </div>
+                              <!-- CONFIRM PASSWORD -->
+                              <div class="form-group">
+                                 <label class="control-label">Confirm Password</label>
+                                 <input type="password" class="form-control input">
+                              </div>
+                              <div class="form-group">
+                                 <div class="">
+                                    <button type="submit" class="btn btn-primary">
+                                    Register
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="features">
+      <div class="col-md-4 features" style="background-color: #f44336;">
+        <center>
+            <img src="template_features.png" alt="">
+            <h1 class="title">PACKAGE A</h1>
+            <p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            <a href="#" class="btn btn-lg see-more">See More...</a>
+        </center>
+      </div>
+        <div class="col-md-4 features" style="background-color: #4CAF50;">
+            <center>
+                <img src="template_features.png" alt="">
+                <h1 class="title">PACKAGE B</h1>
+                <p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                <a href="#" class="btn btn-lg see-more">See More...</a>
+            </center>
+        </div>
+        <div class="col-md-4 features" style="background-color: #2196F3;">
+            <center>
+                <img src="template_features.png" alt="">
+                <h1 class="title">PACKAGE C</h1>
+                <p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                <a href="#" class="btn btn-lg see-more">See More...</a>
+            </center>
+        </div>
+        </div>
+   </body>
+   <script src="">
+       <script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+   </script>
+</html>
