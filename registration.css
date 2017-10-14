@@ -3,18 +3,27 @@ body {
    position: relative;
 }
 
+img {
+   display: block;
+   margin: auto;
+}
+
 .features {
    color: white;
    padding-top: 8%;
    height: 650px;
+   margin: auto;
 }
+
 
 .caption {
    font-size: 20px;
+   text-align: center;
 }
 
 .title {
    font-family: impact; 
+   text-align: center;
 }
 
 .see-more {
@@ -22,6 +31,7 @@ body {
    border-radius:30px; 
    margin-bottom: 20px; 
    color:#FFEB3B;
+   margin-left: 150px;
 }
 
 .jumbotron {
@@ -52,10 +62,39 @@ select {
 p {
     margin: 12px;
 }
+
+@media (max-width: 1024px) {
+   .see-more{
+      padding: 5px 8px;
+      border:3px solid #FFEB3B; 
+      margin-left: 100px; 
+   }
+
+   .caption {
+      font-size: 18px;
+    }
+}
 @media (max-width: 800px) {
     .image {
         display: none;
-        
+    }
+    .title{
+      margin-top: 0px;
+      font-size: 35px;
+      text-align: left;
+    }
+    .caption {
+      font-size: 18px;
+      text-align: left;
+      margin-left: 0;
+    }
+    .see-more{
+      padding: 5px 8px;
+      border:3px solid #FFEB3B;  
+      margin-left: 0;
+    }
+    img {
+      margin: 0;
     }
     .registration {
       margin-left: 16.6666667%;
@@ -66,6 +105,11 @@ p {
       height: 30px;
       font-size: 12px;
     }
+
+    .features {
+      padding-top: 8%;
+      height: 380px;
+   }
 }
 
 @media (max-width: 425px) {

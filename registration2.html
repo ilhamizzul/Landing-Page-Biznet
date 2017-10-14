@@ -31,15 +31,13 @@
          <div class="row">
             <div class="col-md-8 image">
                <!-- <img class="img img-responsive" src="biztek_fix1.png" alt=""> -->
-               
-                   <h1>
-                       Find Your Ideal Trading <br> For Life
-                   </h1>
-                   <br>
-                   <h3>
-                       Registrasi untuk mendapat benefit yang lebih besar
-                   </h3>
-               
+               <h1>
+                  Find Your Ideal Trading <br> For Life
+               </h1>
+               <br>
+               <h3>
+                  Registrasi untuk mendapat benefit yang lebih besar
+               </h3>
             </div>
             <div class="registration col-md-4 col-sm-8 col-xs-11">
                <div class="panel panel-default">
@@ -113,60 +111,66 @@
          </div>
       </div>
       <div id="features">
-      <div class="col-md-4 features" style="background-color: #f44336;">
-        <center>
-            <img src="template_features.png" alt="">
-            <h1 class="title">PACKAGE A</h1>
-            <p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-            <a href="#" class="btn btn-lg see-more">See More...</a>
-        </center>
+         <div class="col-md-4 features" style="background-color: #f44336;">
+            <div class="col-md-12 col-sm-4 col-xs-12" style="padding:0;">
+               <img src="template_features.png" alt="">
+               </div>
+               <div class="col-md-12 col-sm-8 col-xs-12" style="padding:0;">
+               <h1 class="title">PACKAGE A</h1>
+               <p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+               <a href="#" class="btn btn-lg see-more">See More...</a>
+               </div>
+         </div>
+         <div class="col-md-4 features" style="background-color: #4CAF50;">
+            <div class="col-md-12 col-sm-4 col-xs-12" style="padding:0;">
+               <img src="template_features.png" alt="">
+               </div>
+               <div class="col-md-12 col-sm-8 col-xs-12" style="padding:0;">
+               <h1 class="title">PACKAGE B</h1>
+               <p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+               <a href="#" class="btn btn-lg see-more">See More...</a>
+               </div>
+         </div>
+         <div class="col-md-4 features" style="background-color: #2196F3;">
+               <div class="col-md-12 col-sm-4 col-xs-12" style="padding:0;">
+               <img src="template_features.png" alt="">
+               </div>
+               <div class="col-md-12 col-sm-8 col-xs-12" style="padding:0;">
+               <h1 class="title">PACKAGE C</h1>
+               <p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+               <a href="#" class="btn btn-lg see-more">See More...</a>
+               </div>
+         </div>
       </div>
-        <div class="col-md-4 features" style="background-color: #4CAF50;">
-            <center>
-                <img src="template_features.png" alt="">
-                <h1 class="title">PACKAGE B</h1>
-                <p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-                <a href="#" class="btn btn-lg see-more">See More...</a>
-            </center>
-        </div>
-        <div class="col-md-4 features" style="background-color: #2196F3;">
-            <center>
-                <img src="template_features.png" alt="">
-                <h1 class="title">PACKAGE C</h1>
-                <p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-                <a href="#" class="btn btn-lg see-more">See More...</a>
-            </center>
-        </div>
-        </div>
    </body>
    <script src="">
-       <script>
-$(document).ready(function(){
-  // Add scrollspy to <body>
-  $('body').scrollspy({target: ".navbar", offset: 50});   
-
-  // Add smooth scrolling on all links inside the navbar
-  $("#myNavbar a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+      <script>
+      $(document).ready(function(){
+      // Add scrollspy to <body>
+      $('body').scrollspy({target: ".navbar", offset: 50});   
+      
+      // Add smooth scrolling on all links inside the navbar
+      $("#myNavbar a").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
+      
       // Store hash
       var hash = this.hash;
-
+      
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+       scrollTop: $(hash).offset().top
       }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+      
+       // Add hash (#) to URL when done scrolling (default click behavior)
+       window.location.hash = hash;
       });
-    }  // End if
-  });
-});
-</script>
+      }  // End if
+      });
+      });
+   </script>
    </script>
 </html>
