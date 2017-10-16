@@ -9,6 +9,7 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <link href="css/bootstrap-theme.css" rel="stylesheet" />
       <link rel="stylesheet" type="text/css" href="registration.css">
+      <link rel="stylesheet" type="text/css" href="modal.css">
    </head>
    <body>
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -21,7 +22,7 @@
                   <li role="presentation"><a href="#home">Home</a></li>
                   <li role="presentation"><a href="#features">Features </a></li>
                   <li role="presentation"><a href="#">Contact </a></li>
-                  <li role="presentation"><a href="#">Register </a></li>
+                  <li role="presentation" id="register">Register</li>
                   <li role="presentation"><a href="#">Login </a></li>
                </ul>
             </div>
@@ -50,6 +51,7 @@
                            <div class="col-md-12 col-sm-12 col-xs-12">
                               <!-- NAMA PERUSAHAAN -->
                               <label class="control-label">Nama Perusahaan</label>
+                              <div class="form-group">
                               <div class="input-group">
                                  <span style="" class="input-group-addon">
                                     <select id="select">
@@ -61,6 +63,7 @@
                                  </span>
                                  <input type="text" class="form-control input">
                               </div>
+                              </div>
                               <!-- EMAIL -->
                               <div class="form-group">
                                  <label class="control-label">Email</label>
@@ -68,6 +71,7 @@
                               </div>
                               <!-- NAMA ORANG -->
                               <label class="control-label">Nama Orang Yang Dapat Dihubungi</label>
+                              <div class="form-group">
                               <div class="input-group">
                                  <span style="" class="input-group-addon">
                                     <select  id="select">
@@ -77,13 +81,16 @@
                                  </span>
                                  <input type="text" class="form-control input">
                               </div>
+                              </div>
                               <!-- NOMOR ORANG -->
                               <label class="control-label">Nomor Orang Yang Dapat Dihubungi</label>
+                              <div class="form-group">
                               <div class="input-group">
                                  <span style="" class="input-group-addon">
                                  +62
                                  </span>
                                  <input type="text" class="form-control input">
+                              </div>
                               </div>
                               <!-- PASSWORD -->
                               <div class="form-group">
@@ -142,35 +149,27 @@
                </div>
          </div>
       </div>
+
+      <!-- MODAL -->
+      <div id="regist" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
    </body>
-   <script src="">
-      <script>
-      $(document).ready(function(){
-      // Add scrollspy to <body>
-      $('body').scrollspy({target: ".navbar", offset: 50});   
-      
-      // Add smooth scrolling on all links inside the navbar
-      $("#myNavbar a").on('click', function(event) {
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-      
-      // Store hash
-      var hash = this.hash;
-      
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-       scrollTop: $(hash).offset().top
-      }, 800, function(){
-      
-       // Add hash (#) to URL when done scrolling (default click behavior)
-       window.location.hash = hash;
-      });
-      }  // End if
-      });
-      });
-   </script>
-   </script>
+        <script src="scrollspy.js"></script>
+        <script src="modal.js"></script>
 </html>

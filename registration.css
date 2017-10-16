@@ -114,7 +114,28 @@ p {
 
 @media (max-width: 425px) {
    .registration {
-      margin-left: 5%;
+      margin-left: 5.5%;
       margin-top: 15%;
+    }
+
+    img {
+      display: block;
+      margin: auto;
+    }
+
+    .features {
+      padding-top: 12%;
+      height: 500px;
+    }
+    .caption {
+      text-align: center;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .see-more{
+      margin-left: 34%;
     }
 }
